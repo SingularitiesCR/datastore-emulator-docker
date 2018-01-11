@@ -2,8 +2,6 @@
 
 A [Google Cloud Datastore Emulator](https://cloud.google.com/datastore/docs/tools/datastore-emulator/) container image. The image is meant to be used for creating an standalone emulator for testing.
 
-- [`171.0` (Dockerfile)](https://github.com/SingularitiesCR/datastore-emulator-docker/blob/171.0/Dockerfile)
-
 ## Environment
 
 The following environment variables must be set:
@@ -46,7 +44,7 @@ version: "2"
 
 services:
   datastore:
-    image: singularities/datastore
+    image: singularities/datastore-emulator
     environment:
       - DATASTORE_PROJECT_ID=project-test
       - DATASTORE_LISTEN_ADDRESS=0.0.0.0:8081
